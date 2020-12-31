@@ -1,0 +1,10 @@
+{
+  "dotnet-test-explorer.testProjectPath": "**/*Test.csproj",
+  "dotnet-test-explorer.autoWatch": true,
+  "dotnet-test-explorer.testArguments": "/p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./lcov.info",
+  "omnisharp.enableRoslynAnalyzers": true,
+  "editor.formatOnSave": true,
+  "[csharp]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
