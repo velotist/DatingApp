@@ -10,9 +10,9 @@ export class NavComponent implements OnInit {
   model: any = {}
   loggedIn: boolean
 
-  constructor(private accountService: AccountService) {}
+  constructor(private accountService: AccountService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   // tslint:disable-next-line: typedef
   login() {
@@ -25,5 +25,10 @@ export class NavComponent implements OnInit {
         console.log(error)
       }
     )
+  }
+
+  // tslint:disable-next-line: typedef
+  logout() {
+    this.loggedIn = false
   }
 }
