@@ -12,7 +12,9 @@ export class NavComponent implements OnInit {
 
   constructor(private accountService: AccountService) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.getCurrentUser()
+   }
 
   // tslint:disable-next-line: typedef
   login() {
@@ -29,6 +31,16 @@ export class NavComponent implements OnInit {
 
   // tslint:disable-next-line: typedef
   logout() {
+    this.accountService.logout()
     this.loggedIn = false
+  }
+
+  // tslint:disable-next-line: typedef
+  getCurrentUser() {
+    this.accountService.currentUser$.subscribe(user => {
+      this.loggedIn = !!user
+    }, error => {
+      console.log(error)
+    })
   }
 }
