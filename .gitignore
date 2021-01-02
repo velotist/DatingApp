@@ -1,12 +1,1 @@
-DatingAppClient/dist/DateAppClient/favicon.ico
-DatingAppClient/dist/DateAppClient/index.html
-DatingAppClient/dist/DateAppClient/main.js
-DatingAppClient/dist/DateAppClient/main.js.map
-DatingAppClient/dist/DateAppClient/polyfills.js
-DatingAppClient/dist/DateAppClient/polyfills.js.map
-DatingAppClient/dist/DateAppClient/runtime.js
-DatingAppClient/dist/DateAppClient/runtime.js.map
-DatingAppClient/dist/DateAppClient/styles.css
-DatingAppClient/dist/DateAppClient/styles.css.map
-DatingAppClient/dist/DateAppClient/vendor.js
-DatingAppClient/dist/DateAppClient/vendor.js.map
+DatingAppClient/dist/*
